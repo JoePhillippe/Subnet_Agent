@@ -16,7 +16,6 @@ agent1_bp = Blueprint("agent1", __name__)
 
 
 # Initialize Anthropic client
-# Initialize Anthropic client
 client = Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
 
 # Subnetting Matrix Reference

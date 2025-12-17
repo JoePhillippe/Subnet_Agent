@@ -13,7 +13,6 @@ agent2_bp = Blueprint("agent2", __name__)
 
 
 # Initialize Anthropic client
-# Initialize Anthropic client
 client = Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
 
 # Powers of 2 Matrix Reference

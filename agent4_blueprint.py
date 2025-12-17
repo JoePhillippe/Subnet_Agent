@@ -26,7 +26,6 @@ agent4_bp = Blueprint("agent4", __name__)
 
 
 # Initialize Anthropic client
-# Initialize Anthropic client
 client = Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
 
 # VLSM Problems with Visual Diagrams

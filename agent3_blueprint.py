@@ -11,11 +11,6 @@ import secrets
 
 agent3_bp = Blueprint("agent3", __name__)
 
-app.config['SESSION_TYPE'] = 'filesystem'
-app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'
-app.config['SESSION_COOKIE_HTTPONLY'] = True
-
-# Initialize Anthropic client
 # Initialize Anthropic client
 client = Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
 
