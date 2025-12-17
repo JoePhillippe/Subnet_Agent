@@ -269,7 +269,7 @@ def call_claude(messages):
         return f"Error calling Claude API: {str(e)}"
 
 @agent3_bp.route('/')
-def index():
+def home():
     """Main page - problem selection"""
     return render_template_string(INDEX_TEMPLATE)
 

@@ -723,7 +723,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 </html>"""
 
 @agent4_bp.route('/')
-def index():
+def home():
     return render_template_string(HTML_TEMPLATE)
 
 @agent4_bp.route('/get_problem/<int:problem_num>')
