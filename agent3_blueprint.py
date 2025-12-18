@@ -959,8 +959,8 @@ PROBLEM_TEMPLATE = """<!DOCTYPE html>
             
             console.log('Sending fetch request to /chat');
             
-            // Send to server
-            fetch('chat', {
+            // Send to server (../ goes up from /agent3/problem/1 to /agent3/chat)
+            fetch('../chat', {
                 method: 'POST',
                 headers: { 
                     'Content-Type': 'application/json'
@@ -1002,7 +1002,7 @@ PROBLEM_TEMPLATE = """<!DOCTYPE html>
         }
 
         function moveToNextPart() {
-            fetch('next_part', {
+            fetch('../next_part', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' }
             })
@@ -1082,7 +1082,7 @@ PROBLEM_TEMPLATE = """<!DOCTYPE html>
                 const part = this.dataset.part;
                 addMessage('Can you help me with ' + this.textContent + '?', 'user');
                 
-                fetch('chat', {
+                fetch('../chat', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ message: 'Can you help me with ' + this.textContent + '?' })
