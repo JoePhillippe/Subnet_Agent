@@ -460,7 +460,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         });
 
         function loadProblem(problemNum) {
-            fetch('/load_problem', {
+            fetch('load_problem', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({problem_number: problemNum})
@@ -534,7 +534,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             currentAttempt = 0;
             renderParts();
             
-            fetch('/select_part', {
+            fetch('select_part', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({

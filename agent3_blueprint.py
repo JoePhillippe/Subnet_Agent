@@ -1002,7 +1002,7 @@ PROBLEM_TEMPLATE = """<!DOCTYPE html>
         }
 
         function moveToNextPart() {
-            fetch('/next_part', {
+            fetch('next_part', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' }
             })

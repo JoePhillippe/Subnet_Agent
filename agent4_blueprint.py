@@ -636,7 +636,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         }
 
         function loadPart(problemNum, partNum) {
-            fetch('/get_part/' + problemNum + '/' + partNum)
+            fetch('get_part/' + problemNum + '/' + partNum)
                 .then(function(response) { return response.json(); })
                 .then(function(data) {
                     const chatContainer = document.getElementById('chat-container');
