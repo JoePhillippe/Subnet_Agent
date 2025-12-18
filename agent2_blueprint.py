@@ -565,7 +565,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             
             addMessage('user', message);
             
-            fetch('/chat', {
+            fetch('chat', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
@@ -640,7 +640,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
         function resetSession() {
             if (confirm('Reset all progress and start fresh?')) {
-                fetch('/reset', {method: 'POST'})
+                fetch('reset', {method: 'POST'})
                 .then(() => location.reload());
             }
         }

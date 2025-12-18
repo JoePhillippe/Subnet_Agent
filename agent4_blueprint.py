@@ -625,7 +625,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         }
 
         function loadProblemDetails(problemNum) {
-            fetch('/get_problem/' + problemNum)
+            fetch('get_problem/' + problemNum)
                 .then(function(response) { return response.json(); })
                 .then(function(data) {
                     document.getElementById('problem-details').innerHTML = data.html;
@@ -661,7 +661,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             sendBtn.disabled = true;
             sendBtn.innerHTML = '<span class="loading"></span>';
             
-            fetch('/chat', {
+            fetch('chat', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

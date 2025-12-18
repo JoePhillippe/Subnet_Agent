@@ -317,7 +317,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 return;
             }
             
-            fetch('/get_question_by_number', {
+            fetch('get_question_by_number', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({quiz_type: quizType, question_number: questionNum})
@@ -353,7 +353,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             
             addMessage('user', message);
             
-            fetch('/chat', {
+            fetch('chat', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
@@ -418,7 +418,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
         function resetSession() {
             if (confirm('Reset and start fresh?')) {
-                fetch('/reset', {method: 'POST'})
+                fetch('reset', {method: 'POST'})
                 .then(function() { location.reload(); });
             }
         }
