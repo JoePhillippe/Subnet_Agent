@@ -589,13 +589,16 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                     completedParts.add(currentPart);
                     renderParts();
                     
-                    // If Part 2 (Default Subnet Mask) is correct, open matrix in new tab
+                    // Matrix popup feature disabled - routes don't exist yet
+                    // To enable: create /matrix/A, /matrix/B, /matrix/C routes with PDF/image resources
+                    /*
                     if (currentPart === 'part2' && data.address_class) {
                         console.log('Opening matrix for class:', data.address_class);
                         const matrixUrl = '/matrix/' + data.address_class;
                         console.log('Matrix URL:', matrixUrl);
                         window.open(matrixUrl, '_blank');
                     }
+                    */
                 }
                 
                 updateAttemptIndicator();
