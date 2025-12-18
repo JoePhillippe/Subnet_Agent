@@ -617,7 +617,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
         </div>
 
         <div class="problems-grid">
-            <div class="problem-card" onclick="location.href='/problem/1'">
+            <div class="problem-card" onclick="location.href='problem/1'">
                 <div class="problem-number">Problem 1</div>
                 <div class="problem-details">
                     <div><strong>Network:</strong> 210.220.3.0</div>
@@ -627,7 +627,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
                 <button class="start-button">Start Problem 1</button>
             </div>
 
-            <div class="problem-card" onclick="location.href='/problem/2'">
+            <div class="problem-card" onclick="location.href='problem/2'">
                 <div class="problem-number">Problem 2</div>
                 <div class="problem-details">
                     <div><strong>Network:</strong> 196.23.45.0</div>
@@ -637,7 +637,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
                 <button class="start-button">Start Problem 2</button>
             </div>
 
-            <div class="problem-card" onclick="location.href='/problem/3'">
+            <div class="problem-card" onclick="location.href='problem/3'">
                 <div class="problem-number">Problem 3</div>
                 <div class="problem-details">
                     <div><strong>Network:</strong> 172.33.0.0</div>
@@ -647,7 +647,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
                 <button class="start-button">Start Problem 3</button>
             </div>
 
-            <div class="problem-card" onclick="location.href='/problem/4'">
+            <div class="problem-card" onclick="location.href='problem/4'">
                 <div class="problem-number">Problem 4</div>
                 <div class="problem-details">
                     <div><strong>Network:</strong> 188.16.0.0</div>
@@ -657,7 +657,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
                 <button class="start-button">Start Problem 4</button>
             </div>
 
-            <div class="problem-card" onclick="location.href='/problem/5'">
+            <div class="problem-card" onclick="location.href='problem/5'">
                 <div class="problem-number">Problem 5</div>
                 <div class="problem-details">
                     <div><strong>Network:</strong> 112.0.0.0</div>
@@ -667,7 +667,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
                 <button class="start-button">Start Problem 5</button>
             </div>
 
-            <div class="problem-card" onclick="location.href='/problem/6'">
+            <div class="problem-card" onclick="location.href='problem/6'">
                 <div class="problem-number">Problem 6</div>
                 <div class="problem-details">
                     <div><strong>Network:</strong> 10.0.0.0</div>
@@ -833,7 +833,7 @@ PROBLEM_TEMPLATE = """<!DOCTYPE html>
 <body>
     <div class="container">
         <div class="sidebar">
-            <a href="/" class="back-button">← Back to Problems</a>
+            <a href="../" class="back-button">← Back to Problems</a>
             
             <h2>{{ problem.name }}</h2>
             
